@@ -1,0 +1,75 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    margin-top: 5vh;
+    border-radius: 2vh;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 80%;
+    animation-name: slideInDown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        max-width: 90%;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.founders-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.founder img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.founder h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.founder p {
+    font-size: 1.2rem;
+    color: #666;
+}
